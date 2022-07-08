@@ -1,0 +1,400 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    color: black;
+    font-family: Montserrat;
+    width: 100%;
+    background: #E5E5E5;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#container {
+    padding-top: 15px;
+    background: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+/* .container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
+    margin-right: 60px;
+} */
+
+#logomarca {
+    width: 610px;
+    height: 148px;
+}
+
+#logo{
+    top: 15px;
+    left: 42px;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 161px;
+}
+
+
+.botao {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    top: 49px;
+    left: 1536px;
+    width: 324px;
+    height: 80px;
+    background: #F4F4F4 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 10px #00000069;
+    border-radius: 51px;
+    opacity: 1;
+    margin-right: 60px;
+    border: none;
+    font-weight: 600;
+}
+
+#cardapiotexto {
+    width: 236px;
+    height: 61px;
+    font-size: 50px;
+    text-align: left;
+    font: Bold 50px/61px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin-bottom: 60px;
+    margin-left:60px;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imagem {
+    margin-left: 60px;
+    margin-right: 70px;
+}
+
+.descricao{
+    height: 269px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nome {
+    top: 471px;
+    left: 398px;
+    height: 44px;
+    text-align: left;
+    font: Bold 36px/44px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin-bottom: 10px;
+    margin-top:26px;
+}
+
+.desc {
+    
+    top: 525px;
+    left: 398px;
+    width: 1002px;
+    height: 80px;
+    text-align: left;
+    font-size:30px;
+    font-weight: normal;
+    font: Regular 30px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin-bottom: 10px;
+    
+}
+
+.preco {
+    top: 615px;
+    left: 398px;
+    width: 233px;
+    height: 73px; 
+    text-align: left;
+    font-size:60px;
+    font-weight: 600;
+    font: SemiBold 60px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.forabtn {
+    width: 460px;
+    display: flex;
+    height: 269px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.botaoAdicionar {
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    top: 49px;
+    left: 1536px;
+    width: 324px;
+    height: 80px;
+    background: #1fd5e9 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 10px #00000069;
+    border-radius: 51px;
+    opacity: 1;
+    border: none;
+    font-weight: 500;
+}
+
+.divisor {
+    border-bottom: 1px solid rgba(0,0,0,.3);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 109px;
+    background: #1fd5e9;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 134px;
+    background: var(--unnamed-color-f9c202) 0% 0% no-repeat padding-box;
+    background: #1fd5e9 0% 0% no-repeat padding-box;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    opacity: 1;
+    
+}
+
+#textoFooter {
+    font-weight: 700;
+    font-size: 30px;
+    margin-right:60px ;
+}
+
+/* .....................  Responsividade ..................... */
+
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+    .imagem{
+        margin-left: 50px;
+        margin-right: 60px;
+    }
+    .descricao{
+        width: 50%;
+    }
+    .desc{
+        width: 75vh;
+    }
+    .item{
+        height: 47vh;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .imagem{
+        margin-left: 30px;
+        margin-right: 40px;
+    }
+    .desc{
+        width: 61vh;
+    }
+    .item{
+        height: 61vh;
+    }
+
+    .forabtn{
+        justify-content: flex-end;
+        padding-left: 40px;
+        padding-right: 20px;
+    }
+    .botaoAdicionar {
+        width: 220px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .item{
+        flex-direction: column;
+        height: 115vh;
+    }
+    .desc {
+        width: 61vh;
+    }
+}
+
+@media screen and (min-device-width: 280px) and (max-device-width: 320px){
+    .desc{
+        font-size: 45px;
+        width: 31vh;
+    }
+    .item{
+        height: 45vh;
+        justify-content: space-evenly;
+    }
+    .forabtn{
+        align-items: flex-end;
+    }
+    #cardapiotexto{
+        font-size: 65px;
+    }
+    .nome{
+        font-size: 51px;
+    }
+    .botaoAdicionar{
+        font-size: 47px;
+        width: 339px;
+        height: 95px;
+    }
+    #textoFooter{
+        font-size: 45px;
+    }
+}
+
+@media screen and (min-device-width: 321px) and (max-device-width: 424px){
+    .desc{
+        font-size: 45px;
+        width: 43vh;
+    }
+    .item{
+        height: 61vh;
+        justify-content: space-evenly;
+    }
+    #cardapiotexto{
+        font-size: 65px;
+    }
+    .nome{
+        font-size: 51px;
+    }
+    .botaoAdicionar{
+        font-size: 47px;
+        width: 339px;
+        height: 95px;
+    }
+    #textoFooter{
+        font-size: 45px;
+    }
+}
+
+@media screen and (min-device-width: 425px) and (max-device-width: 480px){
+    .desc{
+        font-size: 45px;
+        width: 51vh;
+    }
+    .item{
+        height: 81vh;
+        justify-content: space-evenly;
+    }
+    #cardapiotexto{
+        font-size: 65px;
+    }
+    .nome{
+        font-size: 51px;
+    }
+    .botaoAdicionar{
+        font-size: 47px;
+        width: 339px;
+        height: 95px;
+    }
+    #textoFooter{
+        font-size: 45px;
+    }
+}
+
+
+@media screen and (min-device-width: 481px) and (max-device-width: 767px){
+    .desc{
+        font-size: 45px;
+        width: 61vh;
+    }
+    .item{
+        height: 115vh;
+        justify-content: space-between;
+    }
+    #cardapiotexto{
+        font-size: 65px;
+    }
+    .nome{
+        font-size: 51px;
+    }
+    .botaoAdicionar{
+        font-size: 47px;
+        width: 339px;
+        height: 95px;
+    }
+    #textoFooter{
+        font-size: 45px;
+    }
+}
+
+@media screen and (min-width: 1921px){
+    #container{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #intro{
+        width: 273vh;
+    }
+    .descricao{
+        width: 180vh;
+    }
+    .desc{
+        width: 185vh;
+        font-size: 35px;
+    }
+    .nome{
+        font-size: 41px;
+    }
+    #cardapiotexto{
+        font-size: 55px;
+    }
+    #textoFooter{
+        font-size: 35px;
+    }
+    .botaoAdicionar{
+        font-size: 37px;
+    }
+}
